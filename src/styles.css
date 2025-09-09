@@ -178,7 +178,7 @@ body{
 /* Buttons */
 .button{
   border-color: #112A46;
-  background: #ACC8E5;
+  background: white;
   color: #112A46;
   font-weight: 700;
   border: none;
@@ -188,3 +188,96 @@ body{
   cursor: pointer;
 }
 a{ color: inherit; text-decoration: none; }
+/* Auth Page */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.auth-box {
+  background: var(--panel);
+  border: 1px solid rgba(148,163,184,.15);
+  border-radius: 14px;
+  padding: 28px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,.4);
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: var(--text);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--accent-2);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--text);
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+.switch-mode {
+  margin-top: 16px;
+}
+
+.switch-mode button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.switch-mode button:hover {
+  text-decoration: underline;
+}
+
+.auth-message {
+  background: rgba(96,165,250,.15);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: left;
+}
